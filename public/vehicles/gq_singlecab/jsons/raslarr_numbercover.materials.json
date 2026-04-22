@@ -1,0 +1,24 @@
+{
+  "raslarr_numbercover": {
+    "name": "raslarr_numbercover",
+    "mapTo": "raslarr_numbercover",
+    "class": "Material",
+    "persistentId": "a34d2c84-b7c6-4380-a731-c17281f645f5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/barwork/raslarr_numbercover_AO.data.png",
+        "baseColorMap": "textures/barwork/raslarr_numbercover_b.color.png",
+        "detailNormalMap": "textures/barwork/raslarr_numbercover_n.normal.png",
+        "metallicMap": "textures/barwork/raslarr_numbercover_m.data.png",
+        "roughnessMap": "textures/barwork/raslarr_numbercover_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

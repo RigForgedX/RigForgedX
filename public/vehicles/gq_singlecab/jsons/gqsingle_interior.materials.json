@@ -1,0 +1,24 @@
+{
+  "gqsinglecab_interior": {
+    "name": "gqsinglecab_interior",
+    "mapTo": "gqsingle_interior",
+    "class": "Material",
+    "persistentId": "acd0f6ba-04cc-4627-855e-a2dcfef3a93f",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/interior/gqsingle_interior_AO.data.png",
+        "baseColorMap": "textures/interior/gqsingle_interior_b.color.png",
+        "detailNormalMap": "textures/interior/gqsingle_interior_n.normal.png",
+        "metallicMap": "textures/interior/gqsingle_interior_m.data.png",
+        "roughnessMap": "textures/interior/gqsingle_interior_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

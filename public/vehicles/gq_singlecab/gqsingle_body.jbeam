@@ -1,0 +1,631 @@
+{
+"gqsingle_body": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Single Cab",
+        "value":7500,
+    },
+    "slotType" : "gqsingle_body",
+    "slots": [
+        ["type", "default", "description"],
+        ["gqsingle_interior","gqsingle_interior","Dashboard", {"coreSlot":true}],
+        ["boost_guages","gqsingle_dash_gauges","Navigation Unit", {"nodeMove":{"x":0,"y":0,"z":0}}],
+        //bodywork
+        ["gqsingle_rollcage","","Visor"],
+		["gqsingle_visor","gqsingle_visor","Visor"],
+        ["gqsingle_roofrack","","Roof Accessory"],
+        ["gqsingle_runningboard","","Rock Sliders"],
+        ["gqsingle_windshield","gqsingle_windshield","Windshield"],
+        ["gqsingle_backlight","gqsingle_backlight","Rear Window"],
+        ["gqsingle_door_FR","gqsingle_door_FR","Front Right Door"],
+        ["gqsingle_door_FL","gqsingle_door_FL","Front Left Door"],
+        ["gqsingle_snorkel","", "Snorkel"],
+        ["gqsingle_fender_R","gqsingle_fender_R","Front Right Fender"],
+        ["gqsingle_fender_L","gqsingle_fender_L","Front Left Fender"],
+        ["gqsingle_hood","gqsingle_hood","Hood"],
+        ["gqsingle_lightbar","","Light Bar"],
+        ["gqsingle_seat_F","gqsingle_seat_F","Front Seats"],
+        ["pickup_lettering_fender","pickup_lettering_d15","Fender Lettering"],
+
+    ],
+    "soundscape": [
+        ["name", "src"],
+        //indicator7
+        {"node:":"b6l"},
+        ["indicatorStart", "event:>Vehicle>Interior>Indicator>POL_On"],
+        ["indicatorStop", "event:>Vehicle>Interior>Indicator>POL_Off"],
+        ["indLoop1", "event:>Vehicle>Interior>Indicator>POL_Click"],
+        ["indLoop2", "event:>Vehicle>Interior>Indicator>POL_Clack"],
+        //lights3
+        ["LightOn", "event:>Vehicle>Interior>Light>AU5_Light_On"],
+        ["LightOff", "event:>Vehicle>Interior>Light>AU5_Light_Off"],
+        //handbrake2
+        {"node:":"b5ll"},
+        ["handbrakeDisengaged","event:>Vehicle>Interior>Handbrake_Pedal>Pedal_01_Unlock"],
+        ["handbrakeEngaging","event:>Vehicle>Interior>Handbrake_Pedal>Pedal_01_Lock"],
+        //affects horn location because horn soundscape is loaded after
+        {"node:":"b6l"},
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //bodywork
+         ["gqsinglecab_body", ["pickup_body"]],
+         ["UndercarriageCustom", ["pickup_body"]],
+		["gq_body.002", ["pickup_body"]],
+     ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"collision":true},
+         {"selfCollision":true},
+
+         //floor
+         {"nodeWeight":4.512},
+         {"group":["pickup_body","pickup_dash","pickup_floor"]},
+         ["b1rr", -0.82569, -0.78079, 0.40995],
+         {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
+         ["b1r", -0.34410, -0.78079, 0.55000],
+         ["b1l", 0.34410, -0.78079, 0.55000],
+         {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
+         ["b1ll", 0.79572, -0.78079, 0.40995],
+
+         {"group":["pickup_body","pickup_floor"]},
+         ["b2rr", -0.82220, -0.14079, 0.40995],
+         {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
+         ["b2r", -0.34410, -0.14079, 0.55000],
+         ["b2l", 0.34410, -0.14079, 0.55000],
+         {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
+         ["b2ll", 0.82220, -0.14079, 0.40995],
+
+         ["b3rr", -0.83556, 0.50921, 0.40995],
+         {"chemEnergy":1000,"burnRate":0.52,"flashPoint":300,"specHeat":0.8,"smokePoint":150,"selfIgnitionCoef":false},
+         ["b3r", -0.33233, 0.51921, 0.43354],
+         ["b3l", 0.33233, 0.51921, 0.43354],
+         {"chemEnergy":false,"burnRate":false,"flashPoint":false,"specHeat":false,"smokePoint":false,"selfIgnitionCoef":false},
+         ["b3ll", 0.83556, 0.50921, 0.40995],
+
+         //firewall
+         {"nodeWeight":4.418},
+         {"group":["pickup_body", "pickup_dash"]},
+         ["b5rr", -0.78873, -0.78079, 0.84000, {"group":["pickup_body","pickup_dash","pickup_snorkel"]}],
+         ["b5r", -0.34410, -0.80079, 0.84000],
+         ["b5l", 0.35736, -0.74110, 0.84000],
+         ["b5ll", 0.80441, -0.78079, 0.84000],
+         //weight added by glass
+         ["b6rr", -0.75391, -0.77934, 1.24354, {"group":["pickup_body","pickup_dash","gps","pickup_snorkel"]}],
+         ["b6r", -0.30365, -0.81138, 1.29154, {"group":["pickup_body","pickup_dash","gps"]}],
+         ["b6l", 0.30365, -0.81330, 1.29682, {"group":["pickup_body","pickup_dash","gps"]}],
+         ["b6ll", 0.69582, -0.77934, 1.25212, {"group":["pickup_body","pickup_dash","gps"]}],
+         {"group":"pickup_body"},
+
+         //--BODYWORK--
+
+         //roof
+         {"nodeWeight":2.726},
+         //weight added by glass
+         ["rf1r", -0.58560, -0.28167, 1.71162, {"group":["pickup_body","gps"]}],
+         ["rf1", 0.00000, -0.31563, 1.71720, {"group":["pickup_body","gps"]}],
+         ["rf1l", 0.58560, -0.28167, 1.71162, {"group":["pickup_body","gps"]}],
+
+         //weight added by glass
+         ["rf2r", -0.70426, 0.53635, 1.64675],
+         ["rf2", 0.00000, 0.52683, 1.74824],
+         ["rf2l", 0.69342, 0.53635, 1.68694],
+
+         //a pillar
+         {"nodeWeight":1.41},
+         //weight added by glass
+         ["p1r", -0.54656, -0.60593, 1.48040, {"group":["pickup_body","gps"]}],
+         ["p1l", 0.54656, -0.51556, 1.42158, {"group":["pickup_body","gps"]}],
+         ["p2r", -0.62629, -0.61560, 1.44179, {"group":["pickup_body","gps"]}],
+         ["p2l", 0.59598, -0.56358, 1.53882, {"group":["pickup_body","gps"]}],
+
+         ["p2rr", -0.69802, -0.37079, 1.42000, {"group":""}],
+         ["p2ll", 0.69045, -0.31083, 1.39278, {"group":""}],
+
+         //--REGULAR CAB REAR--
+
+         //b pillars
+         //weight added by glass
+         {"nodeWeight":1.88},
+         ["rp3r", -0.73030, 0.52634, 1.40362],
+         ["rp3l", 0.73890, 0.53624, 1.40362],
+
+         //cab wall
+         {"nodeWeight":2.35},
+         ["rb7rr", -0.84679, 0.50921, 0.84000],
+         ["rb7ll", 0.86332, 0.50921, 0.84000],
+
+         //weight added by glass
+         ["rb8rr", -0.77416, 0.52624, 1.23650],
+         ["rb8r", -0.20190, 0.48666, 1.20739],
+         ["rb8l", 0.20190, 0.48666, 1.20739],
+         ["rb8ll", 0.79426, 0.52624, 1.23650],
+
+         //flexbody fix
+         {"nodeWeight":1.88},
+         ["rb7rrr", -0.80708, 0.19921, 1.10000, {"selfCollision":false, "collision":false}],
+         ["rb7lll", 0.80708, 0.19921, 1.10000, {"selfCollision":false, "collision":false}],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          //--DOOR LATCHES--
+          {"optional":true},
+          {"deformLimitExpansion":""},
+          {"beamSpring":1645940,"beamDamp":141},
+          {"beamDeform":8400,"beamStrength":18200},
+
+          //front right door
+          {"breakGroup":"doorlatch_FR"},
+          //regular
+          ["d9r", "rb8rr"],
+          ["d9r", "rb8r"],
+          ["d9r", "rb7rr"],
+          ["d6r", "rb7rr"],
+          ["d6r", "rb8rr"],
+          ["d6r", "b3rr"],
+          ["d6r", "b3r"],
+          ["d6r", "rb7rrr"],
+          ["d9r", "rb7rrr"],
+          ["d14r", "rb8rr"],
+          ["d14r", "rb7rr"],
+          ["d14r", "rb8r"],
+
+          //front left door
+          {"breakGroup":"doorlatch_FL"},
+          //regular
+          ["d9l", "rb8ll"],
+          ["d9l", "rb8l"],
+          ["d9l", "rb7ll"],
+          ["d6l", "rb7ll"],
+          ["d6l", "rb8ll"],
+          ["d6l", "b3ll"],
+          ["d6l", "b3l"],
+          ["d6l", "rb7lll"],
+          ["d9l", "rb7lll"],
+          ["d14l", "rb8ll"],
+          ["d14l", "rb7ll"],
+          {"breakGroup":""},
+          {"optional":false},
+
+          //--EXPANSION DEFORM LIMIT DEFAULT--
+          {"deformLimitExpansion":1.2},
+
+          //breakable beams
+          {"beamDeform":2800,"beamStrength":15750},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          //{"deformGroup":"windshield_break","deformationTriggerRatio":0.2},
+          {"deformLimitExpansion":""},
+          ["b3rr", "rf1r"],
+          ["b3ll", "rf1l"],
+          {"deformGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+
+          //--ROOF--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1579990,"beamDamp":244.4},
+          {"beamDeform":25200,"beamStrength":"FLT_MAX"},
+          //roof main shape lengthwise
+          {"deformLimitExpansion":1.2},
+          ["rf1r", "rf2r"],
+          ["rf1", "rf2"],
+          ["rf1l", "rf2l"],
+          //widthwise
+          ["rf1r", "rf1"],
+          ["rf1", "rf1l"],
+          ["rf2r", "rf2"],
+          ["rf2", "rf2l"],
+          //surficial crossing
+          {"beamSpring":1579990,"beamDamp":244.4},
+          {"beamDeform":5460,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":""},
+          ["rf1r", "rf2"],
+          ["rf1", "rf2r"],
+          ["rf1l", "rf2"],
+          ["rf1", "rf2l"],
+          //rigids
+          {"beamDeform":2240,"beamStrength":"FLT_MAX"},
+          ["rf1l", "rf1r"],
+          ["rf2l", "rf2r"],
+
+          //--PILLARS--
+
+          //a pillar main shape
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":2350940,"beamDamp":94},
+          {"beamDeform":31500,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"windshield_break", "deformationTriggerRatio":0.02},
+          {"deformLimitExpansion":1.2},
+          ["rf1r", "p2r"],
+          ["p2r", "b6rr"],
+          ["rf1r", "p1r"],
+          ["p1r", "b6rr"],
+          ["p1r", "p2r"],
+          ["rf1l", "p2l"],
+          ["p2l", "b6ll"],
+          ["rf1l", "p1l"],
+          ["p1l", "b6ll"],
+          ["p1l", "p2l"],
+
+          //new triangle node
+          {"deformLimitExpansion":""},
+          {"beamDeform":28000,"beamStrength":"FLT_MAX"},
+          ["p2rr", "p2r"],
+          ["p2rr", "p1r"],
+          ["p2ll", "p2l"],
+          ["p2ll", "p1l"],
+          ["p2rr", "rf1r"],
+          ["p2rr", "b6rr"],
+          ["p2ll", "rf1l"],
+          ["p2ll", "b6ll"],
+
+          //strength
+          {"beamSpring":1880940,"beamDamp":94},
+          {"beamDeform":2100,"beamStrength":"FLT_MAX"},
+          {"deformGroup":""},
+          ["p2rr", "rf2r"],
+          ["p2rr", "b1rr"],
+          ["p2ll", "rf2l"],
+          ["p2ll", "b1ll"],
+          ["p2rr", "rf1"],
+          ["p2rr", "b6r"],
+          ["p2ll", "rf1"],
+          ["p2ll", "b6l"],
+
+          //corners
+          {"beamSpring":1410940,"beamDamp":94},
+          {"beamDeform":2450,"beamStrength":"FLT_MAX"},
+          {"deformGroup":"windshield_break", "deformationTriggerRatio":0.02},
+          ["p1r", "rf1"],
+          ["p1r", "b6r"],
+          ["p2r", "rf2r"],
+          ["p2r", "b5rr"],
+          ["p1l", "rf1"],
+          ["p1l", "b6l"],
+          ["p2l", "rf2l"],
+          ["p2l", "b5ll"],
+          {"deformGroup":""},
+
+          //rigids
+          {"beamDeform":10500,"beamStrength":"FLT_MAX"},
+          ["rf1r","b6rr"],
+          ["rf1l","b6ll"],
+          {"deformLimitExpansion":1.2},
+
+          //firewall main shape vertical
+          {"deformLimitExpansion":1.2},
+          {"beamSpring":2373342,"beamDamp":141},
+          {"beamDeform":14140,"beamStrength":"FLT_MAX"},
+          ["b1rr","b5rr"],
+          ["b1r","b5r"],
+          ["b1l","b5l"],
+          ["b1ll","b5ll"],
+          ["b5rr","b6rr"],
+          ["b5r","b6r"],
+          ["b5l","b6l"],
+          ["b5ll","b6ll"],
+
+          //firewall main shape widthwise
+          {"beamDeform":10780,"beamStrength":"FLT_MAX"},
+          ["b5rr","b5r"],
+          ["b5r","b5l"],
+          ["b5l","b5ll"],
+          {"deformGroup":"windshield_break","deformationTriggerRatio":0.01},
+          ["b6rr","b6r"],
+          ["b6r","b6l"],
+          ["b6l","b6ll"],
+          {"deformGroup":""},
+
+          //firewall surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":6580,"beamStrength":"FLT_MAX"},
+          ["b1rr","b5r"],
+          ["b1r","b5rr"],
+          ["b1r","b5l"],
+          ["b1l","b5r"],
+          ["b1l","b5ll"],
+          ["b1ll","b5l"],
+          ["b5rr","b6r"],
+          ["b5r","b6rr"],
+          ["b5r","b6l"],
+          ["b5l","b6r"],
+          ["b5l","b6ll"],
+          ["b5ll","b6l"],
+
+          //firewall vertical rigid
+          {"beamDeform":5040,"beamStrength":"FLT_MAX"},
+          ["b1rr","b6rr"],
+          ["b1r","b6r"],
+          ["b1l","b6l"],
+          ["b1ll","b6ll"],
+
+          {"deformGroup":"windshield_break","deformationTriggerRatio":0.01},
+          //horiz rigid
+          ["b6rr","b6l"],
+          ["b6r","b6ll"],
+          {"deformGroup":""},
+
+          ["b5rr","b5l"],
+          ["b5r","b5ll"],
+
+          //firewall to floor corner rigid
+          {"beamDeform":3500,"beamStrength":"FLT_MAX"},
+          ["b5rr", "b2rr"],
+          ["b5rr", "b3rr"],
+          ["b6rr", "b2rr"],
+
+          ["b5ll", "b2ll"],
+          ["b5ll", "b3ll"],
+          ["b6ll", "b2ll"],
+
+          ["b5l", "b2l"],
+          ["b5r", "b2r"],
+
+          //floor main shape lengthwise
+          {"deformLimitExpansion":1.2},
+          {"beamDeform":22820,"beamStrength":"FLT_MAX"},
+          ["b1rr","b2rr"],
+          ["b1r","b2r"],
+          ["b1l","b2l"],
+          ["b1ll","b2ll"],
+          ["b2rr","b3rr"],
+          ["b2r","b3r"],
+          ["b2l","b3l"],
+          ["b2ll","b3ll"],
+
+          //floor main shape widthwise
+          {"beamDeform":15120,"beamStrength":"FLT_MAX"},
+          ["b1rr","b1r"],
+          ["b1r","b1l"],
+          ["b1l","b1ll"],
+          ["b2rr","b2r"],
+          ["b2r","b2l"],
+          ["b2l","b2ll"],
+          ["b3rr","b3r"],
+          ["b3r","b3l"],
+          ["b3l","b3ll"],
+
+          //floor surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":10220,"beamStrength":"FLT_MAX"},
+          ["b1rr","b2r"],
+          ["b1r","b2rr"],
+          ["b1r","b2l"],
+          ["b1l","b2r"],
+          ["b1l","b2ll"],
+          ["b1ll","b2l"],
+
+          ["b2rr","b3r"],
+          ["b2r","b3rr"],
+          ["b2r","b3l"],
+          ["b2l","b3r"],
+          ["b2l","b3ll"],
+          ["b2ll","b3l"],
+
+          //floor rigids
+          {"beamDeform":3220,"beamStrength":"FLT_MAX"},
+          ["b1rr", "b1l"],
+          ["b1ll", "b1r"],
+          ["b2rr", "b2l"],
+          ["b2ll", "b2r"],
+          ["b3rr", "b3l"],
+          ["b3ll", "b3r"],
+          ["b1rr", "b3rr"],
+          ["b1ll", "b3ll"],
+
+          //--REGULAR CAB REAR--
+
+          //b pillar main shape
+          {"deformLimitExpansion":1.2},
+          {"beamSpring":1955982,"beamDamp":117.31},
+          {"beamDeform":17780,"beamStrength":"FLT_MAX"},
+          ["rb8rr", "rp3r"],
+          ["rp3r", "rf2r"],
+          ["rb8ll", "rp3l"],
+          ["rp3l", "rf2l"],
+          //corners
+          {"deformGroup":"backlight_break", "deformationTriggerRatio":0.01},
+          {"beamDeform":2436,"beamStrength":"FLT_MAX"},
+          {"deformLimitExpansion":""},
+          ["rp3r", "rf2"],
+          ["rp3r", "rb8r"],
+          ["rp3r", "rf1r"],
+          ["rp3r", "rb8l"],
+
+          ["rp3l", "rf2"],
+          ["rp3l", "rb8l"],
+          ["rp3l", "rf1l"],
+          ["rp3l", "rb8r"],
+
+          ["rf1l", "rb8ll"],
+          ["rf1r", "rb8rr"],
+
+          ["rp3l", "b2ll"],
+          ["rp3r", "b2rr"],
+
+          ["rf2l", "rb8l"],
+          ["rf2r", "rb8r"],
+          ["rf2", "rb8rr"],
+          ["rf2", "rb8ll"],
+          {"deformGroup":""},
+
+          //rigids
+          {"beamDeform":10136,"beamStrength":"FLT_MAX"},
+          ["rb8rr", "rf2r"],
+          ["rb8ll", "rf2l"],
+          ["rp3r", "rb7rr"],
+          ["rp3l", "rb7ll"],
+
+          //rear wall main shape
+          {"deformLimitExpansion":1.2},
+          {"beamSpring":2373342,"beamDamp":141},
+          {"beamDeform":14840,"beamStrength":"FLT_MAX"},
+          ["b3rr", "rb7rr"],
+          ["rb7rr", "rb8rr"],
+          ["b3ll", "rb7ll"],
+          ["rb7ll", "rb8ll"],
+          ["b3r", "rb8r"],
+          ["b3l", "rb8l"],
+          //widthwise
+          {"beamDeform":8680,"beamStrength":"FLT_MAX"},
+          ["rb8rr", "rb8r"],
+          ["rb8r", "rb8l"],
+          ["rb8l", "rb8ll"],
+          //surficial crossing
+          {"deformLimitExpansion":""},
+          {"beamDeform":6580,"beamStrength":"FLT_MAX"},
+          ["rb7rr", "rb8r"],
+          ["rb7rr", "b3r"],
+          ["rb7ll", "rb8l"],
+          ["rb7ll", "b3l"],
+          ["b3r", "rb8rr"],
+          ["rb8r", "b3rr"],
+          ["b3l", "rb8ll"],
+          ["rb8l", "b3ll"],
+          ["rb8l", "b3r"],
+          ["b3l", "rb8r"],
+          //rigids
+          {"beamDeform":6440,"beamStrength":"FLT_MAX"},
+          ["rb8rr", "b3rr"],
+          ["rb8ll", "b3ll"],
+          ["rb8rr", "rb8l"],
+          ["rb8ll", "rb8r"],
+          ["rb7rr", "rb8l"],
+          ["rb7rr", "b3l"],
+          ["rb7ll", "rb8r"],
+          ["rb7ll", "b3r"],
+          //corners
+          {"beamDeform":4200,"beamStrength":"FLT_MAX"},
+          ["b1rr", "rb7rr"],
+          ["b2rr", "rb8rr"],
+          ["b2rr", "rb7rr"],
+          ["b2r", "rb8r"],
+
+          ["b1ll", "rb7ll"],
+          ["b2ll", "rb8ll"],
+          ["b2ll", "rb7ll"],
+          ["b2l", "rb8l"],
+
+          //flexbody fix
+          {"beamSpring":1128940,"beamDamp":141},
+          {"beamDeform":3500,"beamStrength":"FLT_MAX"},
+          ["rb7rrr", "b2rr"],
+          ["rb7rrr", "b3rr"],
+          ["rb7rrr", "rb7rr"],
+          ["rb7rrr", "rb8rr"],
+          ["rb7rrr", "rp3r"],
+          ["rb7rrr", "b1rr"],
+
+          ["rb7lll", "b2ll"],
+          ["rb7lll", "b3ll"],
+          ["rb7lll", "rb7ll"],
+          ["rb7lll", "rb8ll"],
+          ["rb7lll", "rp3l"],
+          ["rb7lll", "b1ll"],
+
+          {"beamSpring":188940,"beamDamp":141},
+          ["rb7rrr", "b2r"],
+          ["rb7rrr", "b3r"],
+          ["rb7lll", "b2l"],
+          ["rb7lll", "b3l"],
+          ["rb7rrr", "rb8r"],
+          ["rb7lll", "rb8l"],
+
+          //--BLEED DEFORM LIMIT TO OTHER PARTS--
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //sides
+            {"dragCoef":12},
+            {"group":"pickup_rightside"},
+            ["b1rr",  "b5rr",  "b2rr"],
+            ["b3rr",  "b2rr",  "rb7rr"],
+            ["b5rr",  "rb7rr", "b2rr"],
+            ["b5rr",  "b6rr",  "rb7rr"],
+            ["rb8rr", "rb7rr", "b6rr"],
+            ["b6rr",  "p2r",   "rb8rr"],
+            ["rp3r",  "rb8rr", "p2r"],
+            ["p2r",   "rf1r",  "rp3r"],
+            ["rf2r",  "rp3r",  "rf1r"],
+            {"group":"pickup_leftside"},
+            ["b5ll",  "b1ll",  "b2ll"],
+            ["b2ll",  "b3ll",  "rb7ll"],
+            ["rb7ll", "b5ll",  "b2ll"],
+            ["b6ll",  "b5ll",  "rb7ll"],
+            ["rb7ll", "rb8ll", "b6ll"],
+            ["p2l",   "b6ll",  "rb8ll"],
+            ["rb8ll", "rp3l",  "p2l"],
+            ["rf1l",  "p2l",   "rp3l"],
+            ["rp3l",  "rf2l",  "rf1l"],
+
+            //windshield
+            {"dragCoef":3},
+            {"group":"pickup_fronttop"},
+            {"optional":true},
+            ["rf1r", "p2r", "p1r"],
+            ["p1r", "p2r", "b6rr"],
+            ["p2l", "p1l", "b6ll"],
+            ["rf1l", "p1l", "p2l"],
+            ["rf1r", "p1r", "rf1"],
+            ["rf1", "p1l", "rf1l"],
+            ["p1r", "b6rr", "b6r"],
+            ["p1l", "b6l", "b6ll"],
+            ["p1r", "wi1", "rf1"],
+            ["rf1", "wi1", "p1l"],
+            ["p1r", "b6r", "wi1"],
+            ["wi1", "b6r", "b6l"],
+            ["wi1", "b6l", "p1l"],
+            {"optional":false},
+
+            //roof
+            {"dragCoef":5},
+            {"group":"pickup_roof"},
+            ["rf2r", "rf1", "rf2"],
+            ["rf2", "rf1", "rf2l"],
+            ["rf2r", "rf1r", "rf1"],
+            ["rf1", "rf1l", "rf2l"],
+
+            //firewall
+            {"dragCoef":10},
+            {"group":"pickup_firewall"},
+            ["b6rr", "b5rr", "b5r"],
+            ["b5r", "b6r", "b6rr"],
+            ["b6r", "b5r", "b5l"],
+            ["b5l", "b6l", "b6r"],
+            ["b6l", "b5l", "b6ll"],
+            ["b6ll", "b5l", "b5ll"],
+            ["b5l", "b1l", "b5ll"],
+            ["b5ll", "b1l", "b1ll"],
+            ["b5l", "b5r", "b1l"],
+            ["b5r", "b1r", "b1l"],
+            ["b5rr", "b1r", "b5r"],
+            ["b5rr", "b1rr", "b1r"],
+
+            //rear end
+            {"dragCoef":15},
+            {"group":"pickup_rear"},
+            ["rb8ll", "rb7ll", "rb8l"],
+            ["rb7ll", "b3ll", "b3l"],
+            ["rb8l", "rb7ll", "b3l"],
+            ["rb8l", "b3l", "b3r"],
+            ["b3r", "rb8r", "rb8l"],
+            ["rb8r", "rb7rr", "rb8rr"],
+            ["rb7rr", "rb8r", "b3r"],
+            ["b3r", "b3rr", "rb7rr"],
+
+            ["rp3l", "rb8ll", "rb8l"],
+            ["rf2l", "rp3l", "rf2"],
+            ["rf2", "rp3l", "rb8l"],
+            ["rf2", "rb8l", "rb8r"],
+            ["rf2", "rb8r", "rp3r"],
+            ["rp3r", "rf2r", "rf2"],
+            ["rb8r", "rb8rr", "rp3r"],
+    ],
+},
+}

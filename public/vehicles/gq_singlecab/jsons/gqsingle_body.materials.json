@@ -1,0 +1,39 @@
+{
+  "gqsingle_body": {
+    "name": "gqsingle_body",
+    "mapTo": "gqsingle_body",
+    "class": "Material",
+    "persistentId": "98b00b50-efa6-4c2f-a3d0-47ded1ccf0aa",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/cab/gqsingle_body_AO.data.png",
+        "baseColorMap": "textures/cab/gqsingle_body_b.color.png",
+        "detailNormalMap": "textures/cab/gqsingle_body_n.normal.png",
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "textures/cab/gqsingle_body_m.data.png",
+        "roughnessFactor": 0.497000009,
+        "roughnessMap": "textures/cab/gqsingle_body_r.data.png"
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

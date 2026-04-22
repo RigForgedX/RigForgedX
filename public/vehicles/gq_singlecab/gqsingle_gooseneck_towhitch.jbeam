@@ -1,0 +1,83 @@
+{
+"gqsingle_gooseneck_towhitch": {
+	"information":{
+		"authors":"TAXI_DRIVER",
+		"name":"Gooseneck Tow Hitch",
+	}
+    "slotType" : "gqsingle_gooseneck",
+
+	"flexbodies": [
+		 ["mesh", "[group]:", "nonFlexMaterials"],
+		 ["gqsingle_gooseneck_towhitch", ["pickup_frame","pickup_bed","pickup_gooseneck_towhitch"],[],{"pos":{"x":0.0, "y":0.0, "z":0.0}}],
+		 ["gqsingle_gooseneck_frame", ["pickup_frame","pickup_bed","pickup_gooseneck_towhitch"],[],{"pos":{"x":0.0, "y":0.0, "z":0.0}}],
+		 
+	],
+
+	"nodes": [
+		 ["id", "posX", "posY", "posZ"],
+		 {"collision":true}
+		 {"frictionCoef":0.7},
+		 {"selfCollision":true}
+		 //--TOW HITCH--
+		 {"nodeMaterial":"|NM_METAL"},
+		 {"group":"pickup_gooseneck_towhitch"}
+		 {"nodeWeight":4},
+		 ["gntw", 0.0, 1.72, 1.14,{"couplerTag":"gooseneck","couplerStrength":3001000,"couplerRadius":1}],
+		 {"selfCollision":false}
+		 ["gntw2", 0.0, 1.72, 0.94],
+		 {"group":""}
+	],
+	
+	
+	"beams": [
+		  ["id1:", "id2:"],
+		  {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  //--TOW HITCH--
+		  {"beamSpring":1644840,"beamDamp":155},
+		  {"beamDeform":48000,"beamStrength":250000},
+  
+		  ["gntw","bd9r"],
+		  ["gntw","bd9l"],
+		  ["gntw","bd7r"],
+		  ["gntw","bd7l"],
+		  
+		  ["gntw","f7"],
+		  ["gntw","f7r"],
+		  ["gntw","f7l"],
+		  ["gntw","f17"],
+		  ["gntw","f17r"],
+		  ["gntw","f17l"],
+		  ["gntw","f8r"],
+		  ["gntw","f8l"],
+		  ["gntw","f18r"],
+		  ["gntw","f18l"],
+		  ["gntw","f9"],
+		  ["gntw","f9r"],
+		  ["gntw","f9l"],
+		  ["gntw","f19"],
+		  
+		  ["gntw","gntw2"],
+		  
+		  ["gntw2","bd9r"],
+		  ["gntw2","bd9l"],
+		  ["gntw2","bd7r"],
+		  ["gntw2","bd7l"],
+		  
+		  ["gntw2","f7r"],
+		  ["gntw2","f7l"],
+		  ["gntw2","f17r"],
+		  ["gntw2","f17l"],
+		  ["gntw2","f8r"],
+		  ["gntw2","f8l"],
+		  ["gntw2","f18r"],
+		  ["gntw2","f18l"],
+	],
+	"triangles": [
+			["id1:","id2:","id3:"],
+			//towhitch
+			{"group":"pickup_gooseneck_towhitch"},
+			{"group":""},
+			
+	],
+}
+}

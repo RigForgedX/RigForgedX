@@ -1,0 +1,31 @@
+{
+  "gq_singlecab_chassis": {
+    "name": "gq_singlecab_chassis",
+    "mapTo": "gq_singlechassis",
+    "class": "Material",
+    "persistentId": "c9fa9d3f-e1c5-469f-a783-3cb781532962",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/underbody/gq_singlechassis_AO.data.png",
+        "baseColorMap": "textures/underbody/gq_singlechassis_b.color.png",
+        "detailNormalMap": "textures/underbody/gq_singlechassis_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/underbody/gq_singlechassis_m.data.png",
+        "roughnessMap": "textures/underbody/gq_singlechassis_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

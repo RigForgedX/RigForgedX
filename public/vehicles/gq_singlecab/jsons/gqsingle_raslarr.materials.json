@@ -1,0 +1,31 @@
+{
+  "gqsingle_raslarr": {
+    "name": "gqsingle_raslarr",
+    "mapTo": "gqsingle_raslarr",
+    "class": "Material",
+    "persistentId": "f589c717-c37a-4c10-9ea4-214c94ffb500",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/barwork/gqsingle_raslarr_AO.data.png",
+        "baseColorMap": "textures/barwork/gqsingle_raslarr_b.color.png",
+        "detailNormalMap": "textures/barwork/gqsingle_raslarr_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/barwork/gqsingle_raslarr_m.data.png",
+        "roughnessMap": "textures/barwork/gqsingle_raslarr_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

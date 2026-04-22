@@ -1,0 +1,44 @@
+{
+  "pooly79_tray": {
+    "name": "pooly79_tray",
+    "mapTo": "pooly79_traygq",
+    "class": "Material",
+    "persistentId": "8073523c-dfd0-4592-84fb-97bbf7c0e6c8",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/pooly/pooly79_traygq_AO.data.png",
+        "baseColorFactor": [
+          9.99999997e-07,
+          9.99999997e-07,
+          9.99999997e-07,
+          1
+        ],
+        "baseColorMap": "textures/pooly/pooly79_traygq_b.color.png",
+        "detailNormalMap": "textures/pooly/pooly79_traygq_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/pooly/pooly79_traygq_m.data.png",
+        "roughnessFactor": 0,
+        "roughnessMap": "textures/pooly/pooly79_traygq_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

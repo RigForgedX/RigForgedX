@@ -1,0 +1,14 @@
+{
+  "gqsingle_windban": {
+    "name": "gqsingle_windban",
+    "mapTo": "gqsingle_windban",
+    "class": "Material",
+    "persistentId": "8964dc2c-9dd5-448f-80ec-bf029906ec27",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+}

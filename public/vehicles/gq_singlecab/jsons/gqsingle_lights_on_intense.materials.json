@@ -1,0 +1,28 @@
+{
+  "gqsingle_lights_on_intense": {
+    "name": "gqsingle_lights_on_intense",
+    "mapTo": "gqsingle_lights_on_intense",
+    "class": "Material",
+    "persistentId": "832806f2-4d35-4488-95b1-594da39750e1",
+    "Stages": [
+      {
+        "colorMap": "/textures/lights/gqsinglecab_lights.png",
+        "emissive": true,
+        "glow": true
+      },
+      {
+        "emissive": null,
+        "glow": null
+      },
+      {
+        "emissive": null,
+        "glow": null
+      },
+      {
+        "emissive": null,
+        "glow": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

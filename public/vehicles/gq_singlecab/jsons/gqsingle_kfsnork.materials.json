@@ -1,0 +1,33 @@
+{
+  "gqsinglecab_kfsnork": {
+    "name": "gqsinglecab_kfsnork",
+    "mapTo": "gqsingle_kfsnork",
+    "class": "Material",
+    "persistentId": "20ad09e8-7cc6-4d93-8963-dfdaaa02cbab",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/snorkels/gqsingle_kfsnork_AO.data.png",
+        "baseColorMap": "textures/snorkels/gqsingle_kfsnork_b.color.png",
+        "detailNormalMap": "textures/snorkels/gqsingle_kfsnork_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/snorkels/gqsingle_kfsnork_m.data.png",
+        "roughnessMap": "textures/snorkels/gqsingle_kfsnork_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

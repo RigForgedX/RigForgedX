@@ -1,0 +1,24 @@
+{
+  "Latch": {
+    "name": "Latch",
+    "mapTo": "Latch",
+    "class": "Material",
+    "persistentId": "24ea3a4d-c6ce-4c84-8eff-78c9690a632f",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/Latch/Latch_AO.data.png",
+        "baseColorMap": "textures/Latch/Latch_b.color.png",
+        "detailNormalMap": "textures/Latch/Latch_n.normal.png",
+        "metallicMap": "textures/Latch/Latch_m.data.png",
+        "roughnessMap": "textures/Latch/Latch_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "gqsingle_gooseneck": {
+    "name": "gqsingle_gooseneck",
+    "mapTo": "gqsingle_gooseneck",
+    "class": "Material",
+    "persistentId": "e7ffe99a-93d7-4b3b-848d-61cbf399d005",
+    "Stages": [
+      {
+        "baseColorMap": "/textures/goose neck/gqsingle_gooseneck_b.color.png",
+        "detailNormalMap": "/textures/goose neck/gqsingle_gooseneck_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "/textures/goose neck/gqsingle_gooseneck_m.data.png",
+        "roughnessMap": "/textures/goose neck/gqsingle_gooseneck_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

@@ -1,0 +1,257 @@
+{
+"gqsingle_windshield": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Windshield",
+        "value":350,
+    },
+    "slotType" : "gqsingle_windshield",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //glass
+         ["gqsingle_windscreen", ["pickup_windshield"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>impact_glass_windscreen_01", "deformVolume":0.7}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_GLASS"},
+         {"nodeWeight":1.88},
+         {"group":["pickup_windshield","gps"]},
+         ["wi1", 0.00000, -0.65484, 1.46858],
+         {"group":""},
+         {"nodeMaterial":"|NM_METAL"},
+
+         //add weight
+
+         //roof
+         {"group":"pickup_body"},
+         {"nodeWeight":3.008},
+         ["rf1r", -0.58560, -0.38148, 1.71162, {"group":["pickup_body","pickup_windshield","gps"]}],
+         ["rf1", 0.00000, -0.41544, 1.71720, {"group":["pickup_body","pickup_windshield","gps"]}],
+         ["rf1l", 0.58560, -0.38148, 1.71162, {"group":["pickup_body","pickup_windshield","gps"]}],
+
+         //a-pillar
+         {"nodeWeight":2.256},
+         ["p1r", -0.54656, -0.60593, 1.48040, {"group":["pickup_body","pickup_windshield","gps"]}],
+         ["p1l", 0.54656, -0.51556, 1.42158, {"group":["pickup_body","pickup_windshield","gps"]}],
+         ["p2r", -0.62629, -0.61560, 1.44179, {"group":["pickup_body","pickup_windshield","gps"]}],
+         ["p2l", 0.59598, -0.56358, 1.53882, {"group":["pickup_body","pickup_windshield","gps"]}],
+
+         //firewall
+         {"nodeWeight":5.828},
+         ["b6rr", -0.70368, -0.77934, 1.24354, {"group":["pickup_body","pickup_windshield","gps","pickup_snorkel"]}],
+         ["b6r", -0.30365, -0.81138, 1.29154, {"group":["pickup_body","pickup_windshield","gps"]}],
+         ["b6l", 0.30365, -0.81330, 1.29682, {"group":["pickup_body","pickup_windshield","gps"]}],
+         ["b6ll", 0.69582, -0.77934, 1.25212, {"group":["pickup_body","pickup_windshield","gps"]}],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1895830,"beamDamp":244.4},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          {"deformGroup":"windshield_break", "deformationTriggerRatio":0.03},
+          {"beamDeform":7000,"beamStrength":"FLT_MAX"},
+          //windshield
+          {"deformLimitExpansion":""},
+          ["wi1","rf1"],
+          ["p1r","wi1"],
+          ["p1l","wi1"],
+          ["wi1","b6r"],
+          ["wi1","b6l"],
+          ["wi1","rf2"],
+          ["rf1r","wi1"],
+          ["rf1l","wi1"],
+
+          ["wi1","b6rr"],
+          ["wi1","b6ll"],
+
+          {"beamDeform":7000,"beamStrength":14952},
+          ["p1r","p1l"],
+          ["rf1r","b6r"],
+          ["rf1l","b6l"],
+
+          ["rf1","b6r"],
+          ["rf1","b6l"],
+          {"breakGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+          {"deformGroup":""},
+          {"deformLimitExpansion":1.2},
+    ],
+    "mirrors": [
+        ["name", "id1:", "id2:", "id3:", "textureTarget"],
+        ["mirror_M", "p2ll", "p2rr", "rf1r", "@mirror_M"]
+    ],
+},
+"gqsingle_rear_window": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Rear Window",
+        "value":150,
+    },
+    "slotType" : "gqsingle_backlight",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gqsingle_rear_window", ["pickup_body"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound9", "deformVolume":0.8}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //backlight
+
+         {"group":"pickup_body"},
+
+         //-ROOF--
+         {"nodeWeight":3.478},
+         ["rf2r", -0.38650, 0.47666, 1.58749],
+         ["rf2", 0.00000, 0.47666, 1.60955],
+         ["rf2l", 0.38650, 0.47666, 1.58749],
+
+         //--PILLARS--
+         {"nodeWeight":2.82},
+         ["rp3r", -0.44996, 0.49666, 1.40362],
+         ["rp3l", 0.44996, 0.49666, 1.40362],
+
+         //--CAB--
+         {"nodeWeight":3.008},
+         ["rb8rr", -0.42216, 0.48666, 1.23650],
+         ["rb8r", -0.20190, 0.48666, 1.20739],
+         ["rb8l", 0.20190, 0.48666, 1.20739],
+         ["rb8ll", 0.42216, 0.48666, 1.23650],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          //backlight
+          {"beamSpring":1595830,"beamDamp":122.2},
+          {"deformGroup":"backlight_break", "deformationTriggerRatio":0.03},
+          {"beamDeform":14700,"beamStrength":12460},
+          {"breakGroup":"backlight"},
+          {"deformLimitExpansion":""},
+          ["rf2", "rb8l"],
+          ["rf2", "rb8r"],
+          ["rp3r", "rp3l"],
+          ["rb8l", "rf2r"],
+          ["rb8r", "rf2l"],
+          ["rb8ll", "rf2"],
+          ["rb8rr", "rf2"],
+          ["rp3l", "rf2r"],
+          ["rp3r", "rf2l"],
+          ["rp3l", "rb8rr"],
+          ["rp3r", "rb8ll"],
+          ["rf2l", "rb8rr"],
+          ["rb8ll", "rf2r"],
+          {"breakGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+          {"deformGroup":""},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"gqsingle_doorglass_FR": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Right Door Glass",
+        "value":50,
+    },
+    "slotType" : "gqsingle_doorglass_FR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gqsingle_doorglass_FR", ["pickup_door_FR"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound7", "deformVolume":0.7}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--DOOR--
+         {"collision":false},
+         {"selfCollision":true},
+         {"nodeWeight":3.384},
+         {"group":"pickup_door_FR"},
+         ["d10r", -0.69629, -0.50021, 1.37297],
+         ["d11r", -0.58629, -0.37378, 1.67179],
+         ["d12r", -0.58629, 0.21689, 1.61297],
+         ["d13r", -0.69629, 0.22523, 1.37297],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
+          //brittle glass beams
+          {"beamSpring":2093230,"beamDamp":244.4},
+          {"beamDeform":9800,"beamStrength":9100},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          {"breakGroup":"doorglass_FR"},
+          {"deformGroup":"doorglass_FR_break", "deformationTriggerRatio":0.02},
+          {"deformLimitExpansion":""},
+          ["d11r","d8r"],
+          ["d12r","d8r"],
+          ["d10r","d13r"],
+          ["d10r","d9r"],
+          ["d13r","d7r"],
+          ["d9r","d11r"],
+          ["d7r","d11r"],
+          ["d9r","d12r"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"gqsingle_doorglass_FL": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Left Door Glass",
+        "value":50,
+    },
+    "slotType" : "gqsingle_doorglass_FL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gqsingle_doorglass_FL", ["pickup_door_FL"],[]{"deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound8", "deformVolume":0.7}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--DOOR--
+         {"collision":true},
+         {"selfCollision":false},
+         {"nodeWeight":3.102},
+         {"group":"pickup_door_FL"},
+         ["d10l", 0.71195, -0.48655, 1.37097],
+         ["d11l", 0.60195, -0.26699, 1.66979],
+         ["d12l", 0.60195, 0.20846, 1.61097],
+         ["d13l", 0.71195, 0.21655, 1.37097],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamPrecompression":1, "beamLongBound":1.0, "beamShortBound":1.0},
+          //brittle glass beams
+          {"beamSpring":2093230,"beamDamp":244.4},
+          {"beamDeform":9800,"beamStrength":9100},
+          {"disableMeshBreaking":true,"disableTriangleBreaking":true},
+          {"breakGroup":"doorglass_FL"},
+          {"deformGroup":"doorglass_FL_break", "deformationTriggerRatio":0.02},
+          {"deformLimitExpansion":""},
+          ["d11l","d8l"],
+          ["d12l","d8l"],
+          ["d10l","d13l"],
+          ["d10l","d9l"],
+          ["d13l","d7l"],
+          ["d9l","d11l"],
+          ["d7l","d11l"],
+          ["d9l","d12l"],
+          {"breakGroup":""},
+          {"deformGroup":""},
+          {"disableMeshBreaking":false,"disableTriangleBreaking":false},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+}

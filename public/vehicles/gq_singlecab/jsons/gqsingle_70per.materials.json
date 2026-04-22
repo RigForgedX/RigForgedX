@@ -1,0 +1,27 @@
+{
+  "gqsingle_70per": {
+    "name": "gqsingle_70per",
+    "mapTo": "gqsingle_70per",
+    "class": "Material",
+    "persistentId": "4245029f-e6a8-4e87-acf4-e125ee466e20",
+    "Stages": [
+      {
+        "baseColorMap": "/textures/glass/gqsingle_70per.dds",
+        "opacityFactor": 0.319999993
+      },
+      {
+        "opacityFactor": null
+      },
+      {
+        "opacityFactor": null
+      },
+      {
+        "opacityFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

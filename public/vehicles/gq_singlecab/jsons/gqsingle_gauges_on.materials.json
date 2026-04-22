@@ -1,0 +1,38 @@
+{
+  "gqsingle_gauges_on": {
+    "name": "gqsingle_gauges_on",
+    "mapTo": "gqsingle_gauges_on",
+    "class": "Material",
+    "persistentId": "17f49a41-bcdb-43c0-a70a-a4847944778c",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/mods/unpacked/gq_singlecab/textures/interior/gauges.png",
+        "emissiveFactor": [
+          0.180619001,
+          0.180617005,
+          0.180617005
+        ],
+        "emissiveMap": "/mods/unpacked/gq_singlecab/textures/interior/gauges.png"
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

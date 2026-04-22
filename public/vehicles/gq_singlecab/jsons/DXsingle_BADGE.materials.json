@@ -1,0 +1,35 @@
+{
+  "DXsingle_BADGE": {
+    "name": "DXsingle_BADGE",
+    "mapTo": "DXsingle_BADGE",
+    "class": "Material",
+    "persistentId": "61943e58-50d8-40e3-a209-ecadd587d144",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/cab/DXsingle_BADGE_AO.data.png",
+        "baseColorMap": "textures/cab/DXsingle_BADGE_b.color.png",
+        "detailNormalMap": "textures/cab/DXsingle_BADGE_n.normal.png",
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "textures/cab/DXsingle_BADGE_m.data.png",
+        "roughnessMap": "textures/cab/DXsingle_BADGE_r.data.png"
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

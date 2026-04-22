@@ -1,0 +1,31 @@
+{
+  "gq_emucustomstray": {
+    "name": "gq_emucustomstray",
+    "mapTo": "gq_poolytray",
+    "class": "Material",
+    "persistentId": "7dd3f3fb-10e1-475f-8a86-f9af7343f798",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/trays/gq_poolytray_AO.data.png",
+        "baseColorMap": "textures/trays/gq_poolytray_b.color.png",
+        "detailNormalMap": "textures/trays/gq_poolytray_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/trays/gq_poolytray_m.data.png",
+        "roughnessMap": "textures/trays/gq_poolytray_r.data.png"
+      },
+      {
+        "instanceDiffuse": null
+      },
+      {
+        "instanceDiffuse": null
+      },
+      {
+        "instanceDiffuse": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

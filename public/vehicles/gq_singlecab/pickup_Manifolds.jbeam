@@ -1,0 +1,500 @@
+{
+"pickup_exhmanifold_commonrail_i6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock Exhaust Manifold",
+        "value":200,
+    },
+    "slotType" : "pickup_exhaust_manifold_i6_24V_2007",
+    "slots": [
+        ["type", "default", "description"]
+        ["pickup_intake_i6_diesel24V_2007","pickup_intake_i6_diesel_24V_2007", "Turbocharger"],
+        ["pickup_exhaust_Outlet_i6_24V_2007","pickup_Pipedown_commonrail_i6", "Turbo Exhaust Outlet",{"coreSlot":true}], 
+    ],
+},
+"pickup_exhmanifold_VP44_i6_Stock": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock Exhaust Manifold",
+        "value":200,
+    },
+    "slotType" : "pickup_exhmanifold_VP44_i6",
+    "slots": [
+        ["type", "default", "description"]
+        ["pickup_intake_i6_diesel24V_2002","pickup_turbo_i6_diesel_S", "Turbocharger"],
+        ["pickup_exhaust_Outlet_VP44","pickup_Pipedown_VP44_i6", "Turbo Exhaust Outlet",{"coreSlot":true}], 
+    ],
+},
+"pickup_exhmanifold_6.7L_i6_Stock": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock Exhaust Manifold",
+        "value":200,
+    },
+    "slotType" : "pickup_exhmanifold_6.7L_i6",
+    "slots": [
+        ["type", "default", "description"]
+        ["pickup_intake_i6_diesel24V_6.7L","pickup_intake_i6_diesel_24V_6.7L_S", "Turbocharger"],
+        ["pickup_exhaust_Outlet_6.7","pickup_Pipedown_6.7_i6", "Turbo Exhaust Outlet",{"coreSlot":true}], 
+    ],
+},
+"pickup_exhmanifold_6BT_i6_Stock": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Stock Exhaust Manifold",
+        "value":200,
+    },
+    "slotType" : "pickup_exhmanifold_6BT_i6",
+    "slots": [
+        ["type", "default", "description"]
+        ["pickup_intake_i6_diesel_12V","pickup_intake_i6_diesel_12V", "Turbocharger"],
+        ["pickup_exhaust_Outlet_6BT","pickup_Pipedown_6BT_i6", "Turbo Exhaust Outlet",{"coreSlot":true}], 
+    ],
+},
+"pickup_exhmanifold_hoodstack_commonrail": {
+    "information":{
+        "authors":"fakecarguy",
+        "name":"Hood Stack",
+        "value":120,
+    },
+    "slotType" : "pickup_exhaust_Outlet_i6_24V_2007",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["pickup_hoodstack_i6", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm4r", -0.44, -1.39, 1.07, {"collision":false, "selfCollision":false}],
+         ["exm5r", -0.40, -1.39, 1.35, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":5}], 
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm5r","e3l"],
+          ["exm5r","e3r"],
+          ["exm5r","e4l"],
+          ["exm5r","e4r"],
+          ["exm5r", "e1r"],
+          ["exm5r", "e1l"],
+          ["exm5r", "e2l"],
+          ["e2r", "exm4r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r", "exm5r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r","e3l"],
+          ["exm4r","e3r"],
+          ["exm4r","e4l"],
+          ["exm4r","e4r"],
+          ["exm4r", "e1r"],
+          ["exm4r", "e1l"],
+          ["exm4r", "e2l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"pickup_exhmanifold_hoodstack_VP44": {
+    "information":{
+        "authors":"fakecarguy",
+        "name":"Hood Stack",
+        "value":200,
+    },
+    "slotType" : "pickup_exhaust_Outlet_VP44",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["pickup_hoodstack_i6", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm4r", -0.44, -1.39, 1.07, {"collision":false, "selfCollision":false}],
+         ["exm5r", -0.40, -1.39, 1.35, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":5}], 
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm5r","e3l"],
+          ["exm5r","e3r"],
+          ["exm5r","e4l"],
+          ["exm5r","e4r"],
+          ["exm5r", "e1r"],
+          ["exm5r", "e1l"],
+          ["exm5r", "e2l"],
+          ["e2r", "exm4r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r", "exm5r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r","e3l"],
+          ["exm4r","e3r"],
+          ["exm4r","e4l"],
+          ["exm4r","e4r"],
+          ["exm4r", "e1r"],
+          ["exm4r", "e1l"],
+          ["exm4r", "e2l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"pickup_exhmanifold_hoodstack_6.7L": {
+    "information":{
+        "authors":"fakecarguy",
+        "name":"Hood Stack",
+        "value":205,
+    },
+    "slotType" : "pickup_exhaust_Outlet_6.7",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["pickup_hoodstack_i6", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm4r", -0.44, -1.39, 1.07, {"collision":false, "selfCollision":false}],
+         ["exm5r", -0.40, -1.39, 1.35, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":5}], 
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm5r","e3l"],
+          ["exm5r","e3r"],
+          ["exm5r","e4l"],
+          ["exm5r","e4r"],
+          ["exm5r", "e1r"],
+          ["exm5r", "e1l"],
+          ["exm5r", "e2l"],
+          ["e2r", "exm4r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r", "exm5r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r","e3l"],
+          ["exm4r","e3r"],
+          ["exm4r","e4l"],
+          ["exm4r","e4r"],
+          ["exm4r", "e1r"],
+          ["exm4r", "e1l"],
+          ["exm4r", "e2l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"pickup_exhmanifold_hoodstack_6BT": {
+    "information":{
+        "authors":"fakecarguy",
+        "name":"Hood Stack",
+        "value":266,
+    },
+    "slotType" : "pickup_exhaust_Outlet_6BT",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["pickup_hoodstack_i6", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm4r", -0.44, -1.39, 1.07, {"collision":false, "selfCollision":false}],
+         ["exm5r", -0.40, -1.39, 1.35, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":5}], 
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm5r","e3l"],
+          ["exm5r","e3r"],
+          ["exm5r","e4l"],
+          ["exm5r","e4r"],
+          ["exm5r", "e1r"],
+          ["exm5r", "e1l"],
+          ["exm5r", "e2l"],
+          ["e2r", "exm4r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r", "exm5r"{"isExhaust":"mainEngine"}],    
+	  ["exm4r","e3l"],
+          ["exm4r","e3r"],
+          ["exm4r","e4l"],
+          ["exm4r","e4r"],
+          ["exm4r", "e1r"],
+          ["exm4r", "e1l"],
+          ["exm4r", "e2l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"pickup_exhmanifold_commonrail_i6_2ndGenSwap": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2nd Gen Swap Manifold",
+        "value":250,
+    },
+    "slotType" : "pickup_exhaust_manifold_i6_24V_2007",
+    "slots": [
+        ["type", "default", "description"]
+        ["pickup_intake_i6_diesel24V_2007","pickup_intake_i6_diesel_24V_2007", "Turbocharger"],
+        ["pickup_exhaust_Outlet_i6_24V_2007","pickup_Pipedown_commonrail_i6", "Turbo Exhaust Outlet",{"coreSlot":true}], 
+    ],
+    "mainEngine": {
+},
+    "soundConfigExhaust": {
+        "sampleName": "12V_cummins59",
+	"mainGain": 5,
+        "onLoadGain":1.0,
+        "offLoadGain":0.426,
+
+        "maxLoadMix": 0.6,
+        "minLoadMix": 0,
+
+        "eqLowGain": -6,
+        "eqLowFreq": 500,
+        "eqLowWidth": 0.1,
+
+        "eqHighGain": 0,
+        "eqHighFreq": 2500,
+        "eqHighWidth": 0.1,
+
+        "lowShelfGain":8,
+        "lowShelfFreq":120,
+
+        "highShelfGain":6,
+        "highShelfFreq":4500,
+
+        "fundamentalFrequencyCylinderCount":6
+        "eqFundamentalGain": -5
+    },
+},
+"pickup_exhmanifold_6.7L_i6_2ndGenSwap": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"2nd Gen Swap Manifold",
+        "value":300,
+    },
+    "slotType" : "pickup_exhmanifold_6.7L_i6",
+    "slots": [
+        ["type", "default", "description"]
+        ["pickup_intake_i6_diesel24V_6.7L","pickup_intake_i6_diesel_24V_6.7L_S", "Turbocharger"],
+        ["pickup_exhaust_Outlet_i6_24V_2007","pickup_Pipedown_commonrail_i6", "Turbo Exhaust Outlet",{"coreSlot":true}], 
+    ],
+    "mainEngine": {
+},
+    "soundConfigExhaust": {
+        "sampleName": "12V_cummins59",
+	"mainGain": 5,
+        "onLoadGain":1.0,
+        "offLoadGain":0.426,
+
+        "maxLoadMix": 0.6,
+        "minLoadMix": 0,
+
+        "eqLowGain": -6,
+        "eqLowFreq": 500,
+        "eqLowWidth": 0.1,
+
+        "eqHighGain": 0,
+        "eqHighFreq": 2500,
+        "eqHighWidth": 0.1,
+
+        "lowShelfGain":8,
+        "lowShelfFreq":120,
+
+        "highShelfGain":6,
+        "highShelfFreq":4500,
+
+        "fundamentalFrequencyCylinderCount":6
+        "eqFundamentalGain": -4
+    },
+},
+"pickup_Pipedown_commonrail_i6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Turbo Downpipe",
+        "value":200,
+    },
+    "slotType" : "pickup_exhaust_Outlet_i6_24V_2007",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["Cummins_downpipe_Custom", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm1r", -0.28, -0.75, 0.42, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":0}],
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm1r","e3l"],
+          ["exm1r","e3r"],
+          ["exm1r","e4l"],
+          ["exm1r","e4r"],
+          ["exm1r", "e1r"],
+          ["exm1r", "e1l"],
+          ["exm1r", "e2l"],
+          ["e2r", "exm1r", {"isExhaust":"mainEngine"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"pickup_Pipedown_6.7_i6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Turbo Downpipe",
+        "value":200,
+    },
+    "slotType" : "pickup_exhaust_Outlet_6.7",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["Cummins_downpipe_Custom", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm1r", -0.28, -0.75, 0.42, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":0}],
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm1r","e3l"],
+          ["exm1r","e3r"],
+          ["exm1r","e4l"],
+          ["exm1r","e4r"],
+          ["exm1r", "e1r"],
+          ["exm1r", "e1l"],
+          ["exm1r", "e2l"],
+          ["e2r", "exm1r", {"isExhaust":"mainEngine"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"pickup_Pipedown_VP44_i6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Turbo Downpipe",
+        "value":244,
+    },
+    "slotType" : "pickup_exhaust_Outlet_VP44",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["Cummins_downpipe_Custom", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm1r", -0.28, -0.75, 0.42, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":0}],
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm1r","e3l"],
+          ["exm1r","e3r"],
+          ["exm1r","e4l"],
+          ["exm1r","e4r"],
+          ["exm1r", "e1r"],
+          ["exm1r", "e1l"],
+          ["exm1r", "e2l"],
+          ["e2r", "exm1r", {"isExhaust":"mainEngine"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+"pickup_Pipedown_6BT_i6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Turbo Downpipe",
+        "value":244,
+    },
+    "slotType" : "pickup_exhaust_Outlet_6BT",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["Cummins_downpipe_Custom", ["pickup_engine", "pickup_header"]],
+    ],
+    "nodes":[
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":false},
+         {"collision":true},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":6.58},
+         {"group":"pickup_header"},
+         ["exm1r", -0.28, -0.75, 0.42, {"afterFireAudioCoef":0,"afterFireVisualCoef":0, "exhaustAudioMufflingCoef":1, "exhaustAudioGainChange":0}],
+         {"group":"none"},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"deformLimitExpansion":1.2},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":11163370,"beamDamp":130.43},
+          {"beamDeform":90000,"beamStrength":"FLT_MAX"},
+
+          //exhaust manifold
+          ["exm1r","e3l"],
+          ["exm1r","e3r"],
+          ["exm1r","e4l"],
+          ["exm1r","e4r"],
+          ["exm1r", "e1r"],
+          ["exm1r", "e1l"],
+          ["exm1r", "e2l"],
+          ["e2r", "exm1r", {"isExhaust":"mainEngine"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

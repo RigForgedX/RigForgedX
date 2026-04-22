@@ -1,0 +1,37 @@
+{
+  "gq_taxi_tray": {
+    "name": "gq_taxi_tray",
+    "mapTo": "gq_taxi_tray",
+    "class": "Material",
+    "persistentId": "77d83f47-cbdf-4255-8b68-343cf226fb2c",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/trays/gq_taxi_tray_AO.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "textures/trays/gq_taxi_tray_b.color.png",
+        "detailNormalMap": "textures/trays/gq_taxi_tray_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/trays/gq_taxi_tray_m.data.png",
+        "roughnessMap": "textures/trays/gq_taxi_tray_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

@@ -1,0 +1,16 @@
+{
+"gqsingle_steeringwheel": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Steering Wheel",
+        "value":250,
+    },
+    "slotType" : "gqsingle_steeringwheel",
+    "props": [
+        ["func",     "mesh",         "idRef:","idX:","idY:", "baseRotation",           "rotation",            "translation",         "min", "max", "offset", "multiplier"],
+        //steering wheel
+        ["steering", "gqsingle_steeringwheel", "dsh","dshl","dsh2",       {"x":-70 "y":180, "z":180}, {"x":0, "y":0, "z":1}, {"x":0, "y":0, "z":0}, -1000, 1000, 0, 1],
+     ],
+
+},
+}

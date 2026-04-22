@@ -1,0 +1,31 @@
+{
+  "gqsingle_stedis": {
+    "name": "gqsingle_stedis",
+    "mapTo": "gqsingle_stedis",
+    "class": "Material",
+    "persistentId": "912e6c4d-aa90-4d9d-a5d5-500af70c41f5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/lights/gqsingle_stedis_AO.data.png",
+        "baseColorMap": "textures/lights/gqsingle_stedis_b.color.png",
+        "detailNormalMap": "textures/lights/gqsingle_stedis_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/lights/gqsingle_stedis_m.data.png",
+        "roughnessMap": "textures/lights/gqsingle_stedis_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "gqsingleneedlegaugeon": {
+    "name": "gqsingleneedlegaugeon",
+    "mapTo": "gqsingleneedlegaugeon",
+    "class": "Material",
+    "persistentId": "973b4416-233e-4f2f-b6ee-4fa86459df94",
+    "Stages": [
+      {
+        "baseColorMap": "textures/gauges/Needleguagetaxi.png",
+        "emissiveFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "emissiveMap": "textures/gauges/Needleguagetaxi_on.png"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

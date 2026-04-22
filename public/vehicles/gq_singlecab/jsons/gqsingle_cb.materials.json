@@ -1,0 +1,34 @@
+{
+  "gqsingle_cb": {
+    "name": "gqsingle_cb",
+    "mapTo": "gqsingle_cb",
+    "class": "Material",
+    "persistentId": "a99e6331-e18f-4b1e-8338-7cb1309f996f",
+    "Stages": [
+      {
+        "baseColorMap": "/textures/CB Ariels/gqsingle_cb_b.color.png",
+        "detailNormalMap": "/textures/CB Ariels/gqsingle_cb_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "/textures/CB Ariels/gqsingle_cb_m.data.png",
+        "roughnessFactor": 0.867999971,
+        "roughnessMap": "/textures/CB Ariels/gqsingle_cb_r.data.png"
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

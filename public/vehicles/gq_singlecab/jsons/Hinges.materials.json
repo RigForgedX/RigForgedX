@@ -1,0 +1,24 @@
+{
+  "Hinges": {
+    "name": "Hinges",
+    "mapTo": "Hinges",
+    "class": "Material",
+    "persistentId": "e6ea39a6-3a3e-451e-8403-63bce4f03834",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/Hinges/Hinges_AO.data.png",
+        "baseColorMap": "textures/Hinges/Hinges_b.color.png",
+        "detailNormalMap": "textures/Hinges/Hinges_n.normal.png",
+        "metallicMap": "textures/Hinges/Hinges_m.data.png",
+        "roughnessMap": "textures/Hinges/Hinges_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

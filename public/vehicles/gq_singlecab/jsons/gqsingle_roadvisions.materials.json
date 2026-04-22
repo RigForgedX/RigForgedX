@@ -1,0 +1,24 @@
+{
+  "gqsingle_roadvisions": {
+    "name": "gqsingle_roadvisions",
+    "mapTo": "gqsingle_roadvisions",
+    "class": "Material",
+    "persistentId": "a0a811b0-865d-40b6-a3bb-d24a512aa9c3",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/lights/gqsingle_roadvisions_AO.data.png",
+        "baseColorMap": "textures/lights/gqsingle_roadvisions_b.color.png",
+        "detailNormalMap": "textures/lights/gqsingle_roadvisions_n.normal.png",
+        "metallicMap": "textures/lights/gqsingle_roadvisions_m.data.png",
+        "roughnessMap": "textures/lights/gqsingle_roadvisions_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

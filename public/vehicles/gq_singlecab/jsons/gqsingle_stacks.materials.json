@@ -1,0 +1,31 @@
+{
+  "gqsinglecab_stacks": {
+    "name": "gqsinglecab_stacks",
+    "mapTo": "gqsingle_stacks",
+    "class": "Material",
+    "persistentId": "26c385ca-5c23-4af5-af6e-70959b5db60f",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/underbody/gq_stacks_AO.data.png",
+        "baseColorMap": "textures/underbody/gq_stacks_b.color.png",
+        "detailNormalMap": "textures/underbody/gq_stacks_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/underbody/gq_stacks_m.data.png",
+        "roughnessMap": "textures/underbody/gq_stacks_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "gqsingle_sparetire": {
+    "name": "gqsingle_sparetire",
+    "mapTo": "gqsingle_sparetire",
+    "class": "Material",
+    "persistentId": "a850b922-af4d-4789-bdb4-59a78ea141da",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/trays/gqsinglerub_AO.data.png",
+        "baseColorMap": "textures/trays/gqsingle_sparetire_b.color.png",
+        "detailNormalMap": "textures/trays/gqsinglerub_n.normal.png",
+        "metallicMap": "textures/trays/gqsinglerub_m.data.png",
+        "roughnessMap": "textures/trays/gqsingle_sparetire_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

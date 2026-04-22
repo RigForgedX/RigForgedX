@@ -1,0 +1,24 @@
+{
+  "Lock": {
+    "name": "Lock",
+    "mapTo": "Lock",
+    "class": "Material",
+    "persistentId": "2eaa3d8f-030e-47ee-83e3-1d573d459fc5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/Lock/Lock_AO.data.png",
+        "baseColorMap": "textures/Lock/Lock_b.color.png",
+        "detailNormalMap": "textures/Lock/Lock_n.normal.png",
+        "metallicMap": "textures/Lock/Lock_m.data.png",
+        "roughnessMap": "textures/Lock/Lock_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

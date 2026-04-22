@@ -1,0 +1,27 @@
+{
+  "gqsingle_20perglass": {
+    "name": "gqsingle_20perglass",
+    "mapTo": "gqsingle_20perglass",
+    "class": "Material",
+    "persistentId": "5cded3c1-ddc6-4cc8-9689-50b163101033",
+    "Stages": [
+      {
+        "baseColorMap": "/textures/glass/gqsingle_windban.png",
+        "opacityFactor": 0.742999971
+      },
+      {
+        "opacityFactor": null
+      },
+      {
+        "opacityFactor": null
+      },
+      {
+        "opacityFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "version": 1.5
+  }
+}

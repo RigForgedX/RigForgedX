@@ -1,0 +1,28 @@
+{
+  "gqsingle_highbeam": {
+    "name": "gqsingle_highbeam",
+    "mapTo": "gqsingle_highbeam",
+    "class": "Material",
+    "persistentId": "9a762607-8999-4071-ae7f-f17a750d1aa1",
+    "Stages": [
+      {
+        "colorMap": "_taxi/textures/lights/gqsinglecab_lights.png",
+        "emissive": true,
+        "glow": true
+      },
+      {
+        "emissive": null,
+        "glow": null
+      },
+      {
+        "emissive": null,
+        "glow": null
+      },
+      {
+        "emissive": null,
+        "glow": null
+      }
+    ],
+    "doubleSided": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "gqsingle_lights": {
+    "name": "gqsingle_lights",
+    "mapTo": "gqsingle_lights",
+    "class": "Material",
+    "persistentId": "effd2731-cf17-4aed-8e91-686fc449f37d",
+    "Stages": [
+      {
+        "colorMap": "/textures/lights/gqsinglecab_lights.png",
+        "diffuseColor": [
+          0.728518009,
+          0.728510976,
+          0.728510976,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ]
+  }
+}

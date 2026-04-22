@@ -1,0 +1,25 @@
+{
+  "gqsinglecab_innerwheel": {
+    "name": "gqsinglecab_innerwheel",
+    "mapTo": "gqsinglecab_innerwheel",
+    "class": "Material",
+    "persistentId": "9713a034-3a55-478f-93a3-1e699abf27f4",
+    "Stages": [
+      {
+        "baseColorMap": "textures/steering wheel/STEER_HR2.png",
+        "detailNormalMap": "textures/steering wheel/STEER_HR2_NM.png",
+        "metallicFactor": 1
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

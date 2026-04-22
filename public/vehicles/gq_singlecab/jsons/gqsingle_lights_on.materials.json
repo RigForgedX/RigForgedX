@@ -1,0 +1,35 @@
+{
+  "gqsingle_lights_on": {
+    "name": "gqsingle_lights_on",
+    "mapTo": "gqsingle_lights_on",
+    "class": "Material",
+    "persistentId": "75d3e5ed-67e9-471f-8cbc-61996cc31625",
+    "Stages": [
+      {
+        "colorMap": "/textures/lights/gqsinglecab_lights.png",
+        "diffuseColor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "glow": true
+      },
+      {
+        "diffuseColor": null,
+        "glow": null
+      },
+      {
+        "diffuseColor": null,
+        "glow": null
+      },
+      {
+        "diffuseColor": null,
+        "glow": null
+      }
+    ],
+    "doubleSided": true,
+    "translucentBlendOp": "None",
+    "translucentRecvShadows": true
+  }
+}

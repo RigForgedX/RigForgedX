@@ -1,0 +1,24 @@
+{
+  "number_plate_covergq": {
+    "name": "number_plate_covergq",
+    "mapTo": "number_plate_covergq",
+    "class": "Material",
+    "persistentId": "d3446353-b7c1-4e16-83fa-92e02ac01ce4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/number plate/number_plate_covergq_AO.data.png",
+        "baseColorMap": "textures/number plate/number_plate_covergq_b.color.png",
+        "detailNormalMap": "textures/number plate/number_plate_covergq_n.normal.png",
+        "metallicMap": "textures/number plate/number_plate_covergq_m.data.png",
+        "roughnessMap": "textures/number plate/number_plate_covergq_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

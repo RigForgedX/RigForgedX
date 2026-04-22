@@ -1,0 +1,52 @@
+{
+"gqsingle_fenderflare_kutsnake_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Kutsnake Flare",
+        "value":180,
+    },
+    "slotType" : "gqsingle_fenderflare_FR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gqsingle_fenderflare_kutsnake_R", ["pickup_fender_R"], [],{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--FENDER--
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"pickup_fender_R"},
+         {"nodeWeight":1.88},
+         ["fe4r", -1.02, -1.15, 0.92],
+         ["fe5r", -1.02, -1.79, 0.92],
+         {"group":""},
+    ],
+},
+"gqsingle_fenderflare_kutsnake_L": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Kutsnake Flare",
+        "value":180,
+    },
+    "slotType" : "gqsingle_fenderflare_FL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gqsingle_fenderflare_kutsnake_L", ["pickup_fender_L"], [],{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         //--FENDER--
+         {"selfCollision":true},
+         {"collision":true},
+         {"group":"pickup_fender_L"},
+         {"nodeWeight":1.88},
+         ["fe4l", 1.02, -1.15, 0.92],
+         ["fe5l", 1.02, -1.79, 0.92],
+         {"group":""},
+    ],
+},
+}

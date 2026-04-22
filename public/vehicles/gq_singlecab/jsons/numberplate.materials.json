@@ -1,0 +1,28 @@
+{
+  "numberplate": {
+    "name": "numberplate",
+    "mapTo": "numberplate",
+    "class": "Material",
+    "persistentId": "0366120c-8c5f-487f-93f6-ecf3f1c37b7f",
+    "Stages": [
+      {
+        "baseColorMap": "textures/number plate/tdee.png",
+        "metallicFactor": 1,
+        "roughnessFactor": 0.56400001
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

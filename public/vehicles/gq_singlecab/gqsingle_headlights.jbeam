@@ -1,0 +1,128 @@
+{
+"gq_headlight_LED_R": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Right LED Headlight",
+        "value":220,
+    },
+    "slotType" : "gqsingle_headlight_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gq_headlight_LED_R", ["pickup_fascia"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightColor":{"r":255, "g":255, "b":170, "a":255},
+            "lightAttenuation":{"x":0, "y":1, "z":1},
+            "lightCastShadows":true,
+            "flareName":"vehicleHeadLightFlare",
+            "cookieName":"art/special/BNG_light_cookie_headlight.dds"
+            "texSize":512,
+            "shadowSoftness":0.5,
+        },
+        //low beams angled right slightly to avoid blinding oncoming traffic
+        ["lowbeam"    , "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":0.3},
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_R_break"}],
+        //high beams
+        ["highbeam" ,         "SPOTLIGHT"        , "fa2rr", "fa2r", "fa1rr", {"x":180, "y":0, "z":10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3, "z":0.3},
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_R_break"}],
+        ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         //--FRONT FASCIA--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"pickup_fascia"},
+         {"nodeWeight":2.5},
+         ["fa1r", -0.66308, -2.05280, 0.95793],
+         ["fa2r", -0.65308, -2.06822, 0.75080],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT FASCIA--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":129869.6,"beamDamp":73.32},
+          {"beamDeform":4175,"beamStrength":"FLT_MAX"},
+          //headlight deform
+          {"deformLimitExpansion":""},
+          {"deformGroup":"headlightglass_R_break","deformationTriggerRatio":0.02},
+          {"optional":true}
+          ["fa2rr", "fa1r"],
+          ["fa2r", "fa1rr"],
+          {"optional":false}
+          {"deformGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+"gq_headlight_LED_L": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Left LED Headlight",
+        "value":220,
+    },
+    "slotType" : "gqsingle_headlight_L",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gq_headlight_LED_L", ["pickup_fascia"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":120,
+            "lightColor":{"r":255, "g":255, "b":170, "a":255},
+            "lightAttenuation":{"x":0, "y":1, "z":1},
+            "lightCastShadows":true,
+            "flareName":"vehicleHeadLightFlare",
+            "cookieName":"art/special/BNG_light_cookie_headlight.dds"
+            "texSize":512,
+            "shadowSoftness":0.5,
+        },
+        //low beams angled right slightly to avoid blinding oncoming traffic
+        ["lowbeam"    , "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-10} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.75, "z":-0.3},
+        "lightRange":50,"lightBrightness":0.3,"lightOuterAngle":95,"flareScale":0.07,"deformGroup":"headlightglass_L_break"}],
+        //high beams
+        ["highbeam" ,         "SPOTLIGHT"        , "fa2ll", "fa2l", "fa1ll", {"x":0, "y":0, "z":-20} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.3, "y":0.3 "z":-0.3},
+        "lightRange":80,"lightBrightness":0.6,"lightOuterAngle":80,"flareScale":0.09,"deformGroup":"headlightglass_L_break"}],
+        ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"nodeMaterial":"|NM_PLASTIC"},
+         {"frictionCoef":0.5},
+         //--FRONT FASCIA--
+         {"collision":true},
+         {"selfCollision":true},
+         {"group":"pickup_fascia"},
+         {"nodeWeight":2.5},
+         ["fa1l", 0.65243, -2.04030, 0.98696],
+         ["fa2l", 0.64243, -2.05572, 0.76590],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--FRONT FASCIA--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":129869.6,"beamDamp":73.32},
+          {"beamDeform":4175,"beamStrength":"FLT_MAX"},
+          //headlight deform
+          {"deformLimitExpansion":""},
+          {"deformGroup":"headlightglass_L_break","deformationTriggerRatio":0.02},
+          {"optional":true}
+          ["fa2ll", "fa1l"],
+          ["fa2l", "fa1ll"],
+          {"optional":false}
+          {"deformGroup":""},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"deformLimitExpansion":1.2},
+    ],
+},
+}

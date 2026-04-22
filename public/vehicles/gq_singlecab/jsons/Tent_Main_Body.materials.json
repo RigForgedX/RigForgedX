@@ -1,0 +1,24 @@
+{
+  "Tent_Main_Body": {
+    "name": "Tent_Main_Body",
+    "mapTo": "Tent_Main_Body",
+    "class": "Material",
+    "persistentId": "5aeb0794-1e32-46f4-8211-c562494d6566",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/Main Tent/Tent_Main_Body_AO.data.png",
+        "baseColorMap": "textures/Main Tent/Tent_Main_Body_b.color.png",
+        "detailNormalMap": "textures/Main Tent/Tent_Main_Body_n.normal.png",
+        "metallicMap": "textures/Main Tent/Tent_Main_Body_m.data.png",
+        "roughnessMap": "textures/Main Tent/Tent_Main_Body_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

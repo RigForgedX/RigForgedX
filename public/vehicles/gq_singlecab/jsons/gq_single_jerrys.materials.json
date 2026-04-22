@@ -1,0 +1,24 @@
+{
+  "gq_single_jerrys": {
+    "name": "gq_single_jerrys",
+    "mapTo": "gq_single_jerrys",
+    "class": "Material",
+    "persistentId": "26586856-ed57-4eaa-96b2-d531d6c7d49d",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/barwork/gq_single_jerrys_AO.data.png",
+        "baseColorMap": "textures/barwork/gq_single_jerrys_b.color.png",
+        "detailNormalMap": "textures/barwork/gq_single_jerrys_n.normal.png",
+        "metallicMap": "textures/barwork/gq_single_jerrys_m.data.png",
+        "roughnessMap": "textures/barwork/gq_single_jerrys_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

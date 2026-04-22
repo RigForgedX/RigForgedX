@@ -1,0 +1,31 @@
+{
+  "gqsinglecab_grille_empty": {
+    "name": "gqsinglecab_grille_empty",
+    "mapTo": "gqsingle_grille_empty",
+    "class": "Material",
+    "persistentId": "72217c2a-5030-44fa-a86f-7cf554e64e93",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/cab/gqsingle_grille_empty_AO.data.png",
+        "baseColorMap": "textures/cab/gqsingle_grille_empty_b.color.png",
+        "detailNormalMap": "textures/cab/gqsingle_grille_empty_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/cab/gqsingle_grille_empty_m.data.png",
+        "roughnessMap": "textures/cab/gqsingle_grille_empty_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "gqsingle_voltetc": {
+    "name": "gqsingle_voltetc",
+    "mapTo": "gqsingle_voltetc",
+    "class": "Material",
+    "persistentId": "16a6a0cb-e3bd-4226-9102-88a61acb7bef",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "textures/gauges/clusterGLOWtaxi.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

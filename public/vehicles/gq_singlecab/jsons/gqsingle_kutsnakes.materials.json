@@ -1,0 +1,31 @@
+{
+  "gqsingle_kutsnakes": {
+    "name": "gqsingle_kutsnakes",
+    "mapTo": "gqsingle_kutsnakes",
+    "class": "Material",
+    "persistentId": "ffe354ae-92ca-4fa7-a350-aa59edacddc9",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/flares/gqsingle_kutsnakes_AO.data.png",
+        "baseColorMap": "textures/flares/gqsingle_kutsnakes_b.color.png",
+        "detailNormalMap": "textures/flares/gqsingle_kutsnakes_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/flares/gqsingle_kutsnakes_m.data.png",
+        "roughnessMap": "textures/flares/gqsingle_kutsnakes_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

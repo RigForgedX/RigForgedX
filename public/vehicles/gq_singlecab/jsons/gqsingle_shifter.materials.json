@@ -1,0 +1,40 @@
+{
+  "gqsingle_shifterr": {
+    "name": "gqsingle_shifterr",
+    "mapTo": "gqsingle_shifter",
+    "class": "Material",
+    "persistentId": "c5b5a138-15f7-4e55-ba4a-8d7f8d3622d0",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/textures/interior/gqsingle_shifter_AO.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/textures/interior/gqsingle_shifter_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/textures/interior/gqsingle_shifter_m.data.png",
+        "normalMap": "/mods/unpacked/gq_singlecab_taxi/textures/interior/gqsingle_shifter_n.normal.png",
+        "roughnessMap": "/textures/interior/gqsingle_shifter_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

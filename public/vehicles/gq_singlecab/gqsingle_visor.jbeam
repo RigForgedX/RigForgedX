@@ -1,0 +1,49 @@
+{
+"gqsingle_visor": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Visor",
+        "value":200,
+    },
+    "slotType" : "gqsingle_rollcage",
+    "slots": [
+        ["type", "default", "description"],
+        ["","","Roof Rack Accessory", {"nodeOffset":{"x":0.0,"y":0.0,"z":0.0}}],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["gqsingle_visor", ["pickup_body"], [],{"pos":{"x":0,"y":0,"z":0}}],
+    ],
+},
+"gqsingle_rooflights": {
+    "information":{
+        "authors":"TAXI_DRIVER",
+        "name":"Roof Lights",
+        "value":320,
+    },
+    "slotType" : "gqsingle_rooflights",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         {"deformGroup":"windshield_break", "deformMaterialBase":"gavril_lights", "deformMaterialDamaged":"gavril_lights_dmg"},
+         ["gqsingle_rooflights", ["pickup_body"], [],{"pos":{"x":0,"y":0,"z":0}, "deformSound":"event:>Destruction>Vehicle>Glass>glassbreaksound4", "deformVolume":0.5}],
+         {"deformGroup":""},
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"],
+        //roof lights
+        {
+            "lightInnerAngle":0,
+            "lightOuterAngle":0,
+            "lightRange":5,
+            "lightColor":{"r":255, "g":255, "b":0, "a":255},
+            "lightCastShadows":false,
+            "flareName":"vehicleBrakeLightFlare",
+        },
+        ["lowhighbeam" ,         "SPOTLIGHT"        , "rf1", "rf2", "rf1r", {"x":180, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.15, "y":0.0, "z":-0.02},"flareScale":0.005,"lightBrightness":0.01,"deformGroup":"windshield_break"}],
+        ["lowhighbeam" ,         "SPOTLIGHT"        , "rf1", "rf2", "rf1r", {"x":180, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.15, "y":0.2, "z":-0.02},"flareScale":0.005,"lightBrightness":0.01,"deformGroup":"windshield_break"}],
+        ["lowhighbeam" ,         "SPOTLIGHT"        , "rf1", "rf2", "rf1l", {"x":0, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.15, "y":0.2, "z":0.02},"flareScale":0.005,"lightBrightness":0.01,"deformGroup":"windshield_break"}],
+        ["lowhighbeam" ,         "SPOTLIGHT"        , "rf1", "rf2", "rf1r", {"x":180, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.15, "y":0.76, "z":-0.03},"flareScale":0.005,"lightBrightness":0.01,"deformGroup":"windshield_break"}],
+        ["lowhighbeam" ,         "SPOTLIGHT"        , "rf1", "rf2", "rf1l", {"x":0, "y":0, "z":0} , {"x":0, "y":0, "z":0}    , {"x":0, "y":0, "z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.15, "y":0.76, "z":0.03},"flareScale":0.005,"lightBrightness":0.01,"deformGroup":"windshield_break"}],
+    ],
+},
+}

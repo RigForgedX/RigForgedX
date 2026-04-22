@@ -1,0 +1,35 @@
+{
+  "gqsinglecab_lightbar": {
+    "name": "gqsinglecab_lightbar",
+    "mapTo": "gq_lightbar",
+    "class": "Material",
+    "persistentId": "c86bebfc-0f01-49e2-b40a-ca7106e9f2b7",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/barwork/gq_lightbar_AO.data.png",
+        "baseColorMap": "textures/barwork/gq_lightbar_b.color.png",
+        "detailNormalMap": "textures/barwork/gq_lightbar_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/barwork/gq_lightbar_m.data.png",
+        "roughnessFactor": 0.241999999,
+        "roughnessMap": "textures/barwork/gq_lightbar_r.data.png"
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

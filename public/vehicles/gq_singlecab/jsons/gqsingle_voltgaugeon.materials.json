@@ -1,0 +1,17 @@
+{
+  "gqsingle_voltgaugeon": {
+    "name": "gqsingle_voltgaugeon",
+    "mapTo": "gqsingle_voltgaugeon",
+    "class": "Material",
+    "persistentId": "99334054-127e-4151-a643-36108eae74fd",
+    "Stages": [
+      {
+        "baseColorMap": "textures/gauges/cluster taxi.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  }
+}

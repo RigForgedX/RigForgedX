@@ -1,0 +1,24 @@
+{
+  "gqsinglecabrub": {
+    "name": "gqsinglecabrub",
+    "mapTo": "gqsinglerub",
+    "class": "Material",
+    "persistentId": "dc0d1108-c46e-4940-9b43-2f9d3e845b71",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/trays/gqsinglerub_AO.data.png",
+        "baseColorMap": "textures/trays/gqsinglerub_b.color.png",
+        "detailNormalMap": "textures/trays/gqsinglerub_n.normal.png",
+        "metallicMap": "textures/trays/gqsinglerub_m.data.png",
+        "roughnessMap": "textures/trays/gqsinglerub_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

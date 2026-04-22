@@ -1,0 +1,41 @@
+{
+  "gqsinglecab_boost_on": {
+    "name": "gqsinglecab_boost_on",
+    "mapTo": "gqsinglecab_booston",
+    "class": "Material",
+    "persistentId": "253b16b8-20af-433f-95d7-b229b3df1371",
+    "Stages": [
+      {
+        "baseColorMap": "textures/gauges/Gauge2bartexture.png",
+        "emissiveFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "emissiveMap": "textures/gauges/Gauge2bartexture.png"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  },
+  "gqsinglecab_booston": {
+    "name": "gqsinglecab_booston",
+    "mapTo": "gqsinglecab_booston",
+    "class": "Material",
+    "persistentId": "3c30c622-56d1-41b2-8f6a-0612ba66f7e2",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+}

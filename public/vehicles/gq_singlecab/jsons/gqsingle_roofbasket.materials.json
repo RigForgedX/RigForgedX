@@ -1,0 +1,24 @@
+{
+  "gqsingle_roofbasket": {
+    "name": "gqsingle_roofbasket",
+    "mapTo": "gqsingle_roofbasket",
+    "class": "Material",
+    "persistentId": "181ca8fd-068d-40f0-822e-80ff76df5061",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/barwork/gqsingle_roofbasket_AO.data.png",
+        "baseColorMap": "textures/barwork/gqsingle_roofbasket_b.color.png",
+        "detailNormalMap": "textures/barwork/gqsingle_roofbasket_n.normal.png",
+        "metallicMap": "textures/barwork/gqsingle_roofbasket_m.data.png",
+        "roughnessMap": "textures/barwork/gqsingle_roofbasket_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

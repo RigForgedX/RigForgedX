@@ -1,0 +1,43 @@
+{
+  "gqsingle_gauges": {
+    "name": "gqsingle_gauges",
+    "mapTo": "gqsingle_gauges",
+    "class": "Material",
+    "persistentId": "4364eeae-f2b1-4f5d-940b-bc60622eede8",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "textures/interior/gauges.png",
+        "emissiveFactor": [
+          9.99999997e-07,
+          9.99999997e-07,
+          9.99999997e-07
+        ],
+        "metallicFactor": 0.386999995
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

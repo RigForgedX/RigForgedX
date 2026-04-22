@@ -1,0 +1,52 @@
+{
+  "gqsingle_needle": {
+    "name": "gqsingle_needle",
+    "mapTo": "gqsingle_needle",
+    "class": "Material",
+    "persistentId": "0d7bbacc-fb67-4890-bb86-fadbce4fbb09",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.116451003,
+          0,
+          0,
+          1
+        ],
+        "emissive": true,
+        "glow": true,
+        "glowFactor": [
+          1,
+          0,
+          0
+        ],
+        "specular": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "glow": null,
+        "glowFactor": null,
+        "specular": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "glow": null,
+        "glowFactor": null,
+        "specular": null
+      },
+      {
+        "diffuseColor": null,
+        "emissive": null,
+        "glow": null,
+        "glowFactor": null,
+        "specular": null
+      }
+    ]
+  }
+}

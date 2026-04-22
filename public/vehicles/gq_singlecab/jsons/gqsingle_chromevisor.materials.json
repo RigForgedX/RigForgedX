@@ -1,0 +1,31 @@
+{
+  "gqsingle_chromevisor": {
+    "name": "gqsingle_chromevisor",
+    "mapTo": "gqsingle_chrome",
+    "class": "Material",
+    "persistentId": "e6be3d33-1a38-4472-9d4b-4e10f3771846",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/visor/gqsingle_chrome_AO.data.png",
+        "baseColorMap": "textures/visor/gqsingle_chrome_b.color.png",
+        "detailNormalMap": "textures/visor/gqsingle_chrome_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/visor/gqsingle_chrome_m.data.png",
+        "roughnessMap": "textures/visor/gqsingle_chrome_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

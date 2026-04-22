@@ -1,0 +1,25 @@
+{
+  "gqsinglecab_outerwheel": {
+    "name": "gqsinglecab_outerwheel",
+    "mapTo": "gqsinglecab_outerwheel",
+    "class": "Material",
+    "persistentId": "56428bfd-985b-40d7-a16a-8cc03f1b7d4c",
+    "Stages": [
+      {
+        "baseColorMap": "textures/steering wheel/STEER_HR1.png",
+        "detailNormalMap": "textures/steering wheel/STEER_HR1_NM.png",
+        "metallicFactor": 0.84799999
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

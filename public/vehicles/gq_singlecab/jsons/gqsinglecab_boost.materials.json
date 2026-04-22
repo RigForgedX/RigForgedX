@@ -1,0 +1,17 @@
+{
+  "gqsinglecab_boost": {
+    "name": "gqsinglecab_boost",
+    "mapTo": "gqsinglecab_boost",
+    "class": "Material",
+    "persistentId": "d9e11294-aab1-4053-a889-2b639f51753c",
+    "Stages": [
+      {
+        "baseColorMap": "textures/gauges/Gauge2bartexture.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  }
+}

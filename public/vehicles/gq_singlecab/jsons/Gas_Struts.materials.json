@@ -1,0 +1,24 @@
+{
+  "Gas_Struts": {
+    "name": "Gas_Struts",
+    "mapTo": "Gas_Struts",
+    "class": "Material",
+    "persistentId": "5050c5c9-610e-40a2-9dc7-8db6a3545524",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/Gas Struts/Gas_Struts_AO.data.png",
+        "baseColorMap": "textures/Gas Struts/Gas_Struts_b.color.png",
+        "detailNormalMap": "textures/Gas Struts/Gas_Struts_n.normal.png",
+        "metallicMap": "textures/Gas Struts/Gas_Struts_m.data.png",
+        "roughnessMap": "textures/Gas Struts/Gas_Struts_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

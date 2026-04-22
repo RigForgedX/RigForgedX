@@ -1,0 +1,38 @@
+{
+  "gqsinglecab_volton": {
+    "name": "gqsinglecab_volton",
+    "mapTo": "gqsinglecab_volton",
+    "class": "Material",
+    "persistentId": "a0569a20-9992-4e93-bec9-413a1c1be946",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-07,
+          9.99999997e-07,
+          9.99999997e-07,
+          1
+        ],
+        "baseColorMap": "textures/gauges/cluster taxi.png",
+        "emissiveFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "emissiveMap": "textures/gauges/clusterGLOWtaxi.png"
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

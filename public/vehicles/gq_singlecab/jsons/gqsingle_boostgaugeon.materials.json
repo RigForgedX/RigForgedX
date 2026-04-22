@@ -1,0 +1,38 @@
+{
+  "gqsingle_boostgaugeon": {
+    "name": "gqsingle_boostgaugeon",
+    "mapTo": "gqsinglecab_booston",
+    "class": "Material",
+    "persistentId": "b8e86653-b519-4c29-8407-cc5aa49b5777",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "textures/gauges/Gauge2bartexture.png",
+        "emissiveFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "emissiveMap": "textures/gauges/TurboDecals.png"
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "emissiveFactor": null
+      }
+    ],
+    "version": 1.5
+  }
+}

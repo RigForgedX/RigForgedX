@@ -1,0 +1,35 @@
+{
+  "gqsingle_visor": {
+    "name": "gqsingle_visor",
+    "mapTo": "gqsingle_visor",
+    "class": "Material",
+    "persistentId": "d75c98f7-f48e-4399-b6bd-72b2b99c1d80",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/visor/gqsingle_visor_AO.data.png",
+        "baseColorMap": "textures/visor/gqsingle_visor_b.color.png",
+        "detailNormalMap": "textures/visor/gqsingle_visor_n.normal.png",
+        "instanceDiffuse": true,
+        "metallicFactor": 0.0869999975,
+        "metallicMap": "textures/visor/gqsingle_visor_m.data.png",
+        "roughnessMap": "textures/visor/gqsingle_visor_r.data.png"
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

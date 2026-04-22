@@ -1,0 +1,31 @@
+{
+  "gqsingle_emucustomsfridge": {
+    "name": "gqsingle_emucustomsfridge",
+    "mapTo": "gqsingle_emucustomsfridge",
+    "class": "Material",
+    "persistentId": "c405a050-e007-40b0-afd6-9f531098fc75",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/trays/gqsingle_emucustomsfridge_AO.data.png",
+        "baseColorMap": "textures/trays/gqsingle_emucustomsfridge_b.color.png",
+        "detailNormalMap": "textures/trays/gqsingle_emucustomsfridge_n.normal.png",
+        "metallicMap": "textures/trays/gqsingle_emucustomsfridge_m.data.png",
+        "roughnessFactor": 0.910000026,
+        "roughnessMap": "textures/trays/gqsingle_emucustomsfridge_r.data.png"
+      },
+      {
+        "roughnessFactor": null
+      },
+      {
+        "roughnessFactor": null
+      },
+      {
+        "roughnessFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

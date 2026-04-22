@@ -1,0 +1,24 @@
+{
+  "gqsinglecab_rubber": {
+    "name": "gqsinglecab_rubber",
+    "mapTo": "gqsingle_rubber",
+    "class": "Material",
+    "persistentId": "a98d8ea6-7d40-4212-b581-8707b3eb3f6b",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/cab/gqsingle_rubber_AO.data.png",
+        "baseColorMap": "textures/cab/gqsingle_rubber_b.color.png",
+        "detailNormalMap": "textures/cab/gqsingle_rubber_n.normal.png",
+        "metallicMap": "textures/cab/gqsingle_plastic_m.data.png",
+        "roughnessMap": "textures/cab/gqsingle_rubber_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

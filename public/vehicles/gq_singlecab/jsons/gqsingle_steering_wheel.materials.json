@@ -1,0 +1,31 @@
+{
+  "gqsinglecab_steering_wheel": {
+    "name": "gqsinglecab_steering_wheel",
+    "mapTo": "gqsingle_steering_wheel",
+    "class": "Material",
+    "persistentId": "5d134eb8-fb1e-4d38-8432-ee97f5348996",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/interior/gqsingle_steering_wheel_AO.data.png",
+        "baseColorMap": "textures/interior/gqsingle_steering_wheel_b.color.png",
+        "detailNormalMap": "textures/interior/gqsingle_steering_wheel_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/interior/gqsingle_steering_wheel_m.data.png",
+        "roughnessMap": "textures/interior/gqsingle_steering_wheel_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

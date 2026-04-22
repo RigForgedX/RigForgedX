@@ -1,0 +1,31 @@
+{
+  "gqsingle_cab_plastic": {
+    "name": "gqsingle_cab_plastic",
+    "mapTo": "gqsingle_plastic",
+    "class": "Material",
+    "persistentId": "22673ebe-f51b-43d5-967e-cc1139ad1955",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/cab/gqsingle_plastic_AO.data.png",
+        "baseColorMap": "textures/cab/gqsingle_plastic_b.color.png",
+        "detailNormalMap": "textures/cab/gqsingle_plastic_n.normal.png",
+        "metallicFactor": 1,
+        "metallicMap": "textures/cab/gqsingle_plastic_m.data.png",
+        "roughnessMap": "textures/cab/gqsingle_plastic_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}

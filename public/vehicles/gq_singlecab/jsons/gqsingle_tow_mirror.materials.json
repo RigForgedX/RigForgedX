@@ -1,0 +1,21 @@
+{
+  "gqsingle_tow_mirror": {
+    "name": "gqsingle_tow_mirror",
+    "mapTo": "gqsingle_mirror",
+    "class": "Material",
+    "persistentId": "b5343ce7-787f-48f0-b029-fae0ca30a8b4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/mirrors/gqsingle_mirror_AO.data.png",
+        "baseColorMap": "textures/mirrors/gqsingle_mirror_b.color.png",
+        "detailNormalMap": "textures/mirrors/gqsingle_mirror_n.normal.png",
+        "metallicMap": "textures/mirrors/gqsingle_mirror_m.data.png",
+        "roughnessMap": "textures/mirrors/gqsingle_mirror_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  }
+}

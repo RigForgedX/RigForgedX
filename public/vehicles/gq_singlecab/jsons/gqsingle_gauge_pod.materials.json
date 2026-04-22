@@ -1,0 +1,14 @@
+{
+  "gqsingle_gauge_pod": {
+    "name": "gqsingle_gauge_pod",
+    "mapTo": "gqsingle_gauge_pod",
+    "class": "Material",
+    "persistentId": "bdb22fb3-c345-4288-b27e-80fc23ee44ac",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+}

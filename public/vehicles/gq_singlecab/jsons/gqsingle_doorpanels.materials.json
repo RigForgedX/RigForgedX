@@ -1,0 +1,24 @@
+{
+  "gqsinglecab_doorpanels": {
+    "name": "gqsinglecab_doorpanels",
+    "mapTo": "gqsingle_doorpanels",
+    "class": "Material",
+    "persistentId": "10818da5-b226-4404-97a1-9310f254c9ab",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "textures/interior/gqsingle_doorpanels_AO.data.png",
+        "baseColorMap": "textures/interior/gqsingle_doorpanels_b.color.png",
+        "detailNormalMap": "textures/interior/gqsingle_doorpanels_n.normal.png",
+        "metallicMap": "textures/interior/gqsingle_doorpanels_m.data.png",
+        "roughnessMap": "textures/interior/gqsingle_doorpanels_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  }
+}
