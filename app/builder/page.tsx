@@ -224,7 +224,11 @@ export default function Home() {
   return (
     <main
       style={{
-        minHeight: "100vh",
+        height: "100vh",
+        width: "100vh",
+        margin: 0,
+        padding: 0,
+        overflow: "hidden",
         background: "#111214",
         color: "#f5f5f5",
         display: "grid",
